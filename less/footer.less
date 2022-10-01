@@ -1,0 +1,38 @@
+@import 'mixins.less';
+@import 'variables.less';
+.site-footer{
+    max-width:1920px;
+  
+   .main-footer{
+    background-color:#2795AD;
+    color:white;
+    display:flex;
+    padding:50px 15px;
+    align-items:center;
+    @media @small{
+        height:416px;
+        padding:15px 15px;
+    }
+    a{
+        color:white;
+    }
+    p{
+        font-weight:300;
+    }
+   }
+   .footer-bottom-row{
+    background-color:#000000;
+    color:white;
+    a{
+        color:white;
+    }
+   }
+ 
+}
+
+.footer-widgets-wrapper{
+    width: 100%;
+    .footer-widgets-wrapper-inner{
+        width: 100%;
+    }
+}

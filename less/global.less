@@ -1,0 +1,112 @@
+@import 'variables.less';
+@import 'mixins.less';
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    
+}
+html, body{
+    overflow-x:hidden;
+}
+body{
+   
+    max-width:1920px;
+    margin:0 auto;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+h1.title-front{
+    font-size:25px;
+    @media @small{
+        font-size:36px;
+    }
+}
+h1 strong{
+    color:#2AA6CD;
+}
+.cta-paragraph{
+    font-size:18px;
+    @media @small{
+        font-size:24px;
+
+    }
+}
+.cta-overlay{
+    .wp-block-cover__inner-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 350px;
+    }
+}
+.container{
+    padding-left:15px;
+    padding-right:15px;
+}
+.wp-block-columns{
+    justify-content:center;
+}
+.wp-block-column{
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:15px;
+    padding-right:15px;
+}
+@media (min-width:800px){.wp-block-column{max-width:100%; width:100%;}}
+@media (min-width:1000px){.wp-block-column{max-width:1000px;}}
+@media (min-width:1200px){.wp-block-column{max-width:1200px}}
+@media (min-width:1400px)
+{.wp-block-column{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}}
+@media (min-width:1400px){.wp-block-column{max-width:1380px}}
+.font-20{
+    font-size:16px;
+    white-space:nowrap;
+    @media (min-width:1400px){
+        font-size:20px;
+    }
+}
+.numbers-cnt{
+    @media (min-width:560px){
+        display:flex;
+    }
+    @media @small{
+        display:block;
+    }
+}
+a{
+    text-decoration:none;
+    color: #000;
+    &:active{
+        color: #000;
+    }
+}
+.clima-hover{
+    transition:.3s ease-in-out;
+    &:hover{
+        transform:translateX(20px);
+    }
+}
+.white-space-nowrap{
+    white-space:nowrap;
+}
+.wp-block-cover, .wp-block-cover-image{
+    max-height:430px!important;
+    padding:50px 0px;
+    @media @small{
+        max-height:auto!important;
+        padding:1rem;
+    }
+}
+h2{
+    font-size: 25px;
+    font-weight: 300;
+    @media @small{
+        font-size: 36px;
+    }
+}

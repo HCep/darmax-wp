@@ -1,0 +1,248 @@
+@import 'variables.less';
+@import 'mixins.less';
+.page-banner{
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:250px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    @media @small{
+        height:450px;
+    }
+    .page-title{
+        color:#2AA6CD;
+        .upper;
+        text-align:center;
+        font-size:40px;
+        font-weight:600;
+        text-shadow:8px 8px 2px #8bf9fa;
+        @media @small{
+            font-size:60px;
+        }
+    }
+}
+figure.wp-block-gallery.has-nested-images{
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image){
+    width: 30%;
+    height: 372px;
+    overflow: hidden;
+    margin:10px;
+    background-color: #EFEFEF;
+    border: 1px solid #EFEFEF;
+    a{
+        width:100%;
+        img{
+            width:100%;
+        }
+    }
+
+}
+.cert-section{
+    .cert-wrap{
+        position:relative;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+
+        .cert-single{
+            width: 100%;
+            height: 372px;
+            overflow: hidden;
+            margin-bottom: 70px;
+            background-color: #EFEFEF;
+            border: 1px solid #EFEFEF;
+            @media @small{
+                width: 45%;
+            }
+            @media @medium{
+                width: 30%;
+            }
+            a{
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+        }
+    }
+}
+
+.darmax-contact-card{
+    box-shadow:4px 4px 10px #72C7E4;
+    border-radius:20px;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+    padding:15px; 
+    @media @small{
+        display:block;
+        height:345px;
+        padding:30px 60px; 
+    }
+}
+.font-22{
+    font-size:16px;
+    white-space:nowrap;
+    @media @medium{
+        font-size:20px;
+    }
+@media @x-large{
+    font-size:22px;
+}
+}
+.font-27{
+    font-size:18px;
+    @media @medium{
+        font-size:22px;
+    }
+    @media @x-large{
+        font-size:27px;
+    }
+}
+.label-textarea-form, .label-input-form{
+    font-size:18px;
+    font-weight:bold;
+    color:#000;
+    width:100%;
+    @media @small{
+        font-size:20px;
+    }
+    .upper
+}
+    input:not([type=submit]):not([type=checkbox]), textarea{
+        background-color:#fff;
+        border:1px solid #EFEFEF;
+        box-shadow:4px 4px 10px #72C7E4;
+        padding:10px 25px;
+        width:100%;
+    }
+    textarea{
+        height:215px;
+    }
+.offer-columns{
+    .wp-block-column{
+        display:flex;
+        justify-content:center;
+        @media @small{
+            display:block;
+        }
+        .offer-header{
+            position:relative;
+            font-size: 16px;
+            text-transform: uppercase;
+            height: 76px;
+            display: flex;
+            width:80%;
+            justify-content: center;
+            align-items: center;
+            padding:15px!important;
+            font-weight:bold;
+            a{
+                color:white;
+            }
+            @media @x-small{
+                font-size: 20px;
+            }
+            @media @small{
+                width:100%;
+            }
+        }
+    }
+}
+
+
+.header-left{
+    &:after{
+        content:'';
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        right:-56px;
+        background-image: url("data:image/svg+xml,%3Csvg width='46' height='74' viewBox='0 0 46 74' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M44.5892 34.8495C45.9804 36.0464 45.9804 38.2008 44.5892 39.3978L5.76194 72.8034C3.81704 74.4767 0.805344 73.0949 0.805344 70.5293L0.805344 3.71803C0.805344 1.15235 3.81703 -0.229451 5.76194 1.44388L44.5892 34.8495Z' fill='%232795AD'/%3E%3C/svg%3E");
+        width:46px;
+        height:74px;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+}
+.header-right{
+    &:after{
+        content:'';
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        left:-56px;
+        background-image: url("data:image/svg+xml,%3Csvg width='46' height='74' viewBox='0 0 46 74' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.71666 39.4021C0.327463 38.2029 0.331068 36.0485 1.72428 34.8538L40.6074 1.51331C42.5551 -0.156767 45.5645 1.23007 45.5602 3.79574L45.4483 70.6069C45.444 73.1725 42.43 74.5493 40.4879 72.8727L1.71666 39.4021Z' fill='%232795AD'/%3E%3C/svg%3E");
+        width:46px;
+        height:74px;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+}
+.form-container{
+    
+    @media @medium{
+        padding:50px;
+    }
+}
+.ngg-gallery-thumbnail-box.ngg-3-columns{
+    width: 100%!important;
+    float: left !important;
+    height: 372px;
+    background-color: #EFEFEF;
+    margin: 10px;
+    overflow: hidden;
+    @media @small{
+        width: 45%!important;
+    }
+    @media @medium{
+        width: 30%!important;
+    }
+}
+
+.ngg-galleryoverview {
+    display: flex!important;
+    flex-wrap: wrap;
+    justify-content: Center;
+}
+.ngg-galleryoverview.default-view .ngg-gallery-thumbnail a{
+    width:100%;
+}
+.ngg-gallery-thumbnail img{
+    width:auto!important;
+}
+.numbers-cnt{
+    figure{
+        display:flex;
+        justify-content:center;
+        @media @small{
+            justify-content:none;
+        }
+    }
+    p{
+        text-align:center;
+        @media @small{
+            text-align:left;
+        }
+    }
+}
+
+.ngg-navigation a.page-numbers, .ngg-navigation .ellipsis, .ngg-navigation a.page-numbers:hover, .ngg-navigation span.page-numbers:hover, .ngg-navigation span.current:hover, .ngg-navigation a.next, .ngg-navigation a.prev, .ngg-navigation span.page-numbers, .ngg-navigation span.next, .ngg-navigation span.prev, .ngg-navigation span.current{
+    color:#000;
+    background-color:transparent;
+}
+.ngg-navigation a.next, .ngg-navigation a.prev, .ngg-navigation span.next, .ngg-navigation span.prev{
+    color:#2AA6CD;
+}
+.ngg-navigation span.current{
+    background-color:transparent;
+    color:#2AA6CD
+
+}

@@ -1,0 +1,29 @@
+@import 'variables.less';
+@import 'mixins.less';
+.card-darmax{
+    border:1px solid #E3E3E3;
+    box-shadow:0px 6px 20px #C2E4EC;
+    margin:0px 20px!important;
+    padding:50px;
+    flex-basis:100%!important;
+    transition:.3s ease-in-out;
+    @media @small{
+        flex-basis:40%!important;
+    }
+    @media @large{
+        flex-basis:20%!important;
+    }
+     @media @x-large{
+       flex-basis:18%!important;
+     }
+     &:hover{
+        box-shadow:0px 4px 4px rgba(0,0,0,0.25);
+        transform:translateY(-20px);
+     }
+}
+.front-overlay{
+    min-height:650px!important;
+    @media @small{
+        min-height:980px!important;
+    }
+}

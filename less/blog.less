@@ -1,0 +1,168 @@
+@import 'variables.less';
+@import 'mixins.less';
+.klima-anchor{
+    position:relative;
+    display:inline-block;
+   font-weight:bold;
+   margin:30px auto;
+        width:260px;
+   font-size:22px;
+   @media @x-small{
+    width:310px;
+    font-size:26px;
+   }
+    
+    &:after{
+        content:'';
+        position:absolute;
+        display:block;
+        background-color:#2795AD;
+        border-radius:100px;
+        height:4px;
+        width:100%;
+        box-shadow:8px 8px 4px #aefbfb;
+    }
+    &:before{
+        content:'';
+        position:absolute;
+        right:-18%;
+        height:40px;
+        width:34px;
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-size:contain;
+        top:50%;
+        transform:translateY(-50%);
+        background-image: url("data:image/svg+xml,%3Csvg width='39' height='53' viewBox='0 0 39 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_21_462)'%3E%3Cpath d='M25.6692 19.0991C26.5829 19.9127 26.5585 21.3488 25.6176 22.1309L4.15221 39.9727C2.83682 41.0661 0.844986 40.1109 0.874075 38.4007L1.49327 1.99725C1.52236 0.287042 3.54553 -0.599881 4.82297 0.537562L25.6692 19.0991Z' fill='%232795AD'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_21_462' x='0.873764' y='0.0275879' width='37.4654' height='52.4111' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='8' dy='8'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.152396 0 0 0 0 0.9625 0 0 0 0 0.9625 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_21_462'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_21_462' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+        @media @medium{
+            height:53px;
+            width:39px;
+            right:-15%;
+        }
+   
+    }
+}
+input[type=submit]{
+    color:#000;
+    position:relative;
+    .upper;
+    font-weight:bold;
+    display:inline-block;
+    margin:0px auto;
+    font-size:26px;
+    font-family: 'Montserrat', sans-serif;
+    background-color:transparent;
+    border:0px;
+    
+   
+}
+.border-header{
+    font-size:24px;
+    position:relative;
+    font-weight:bold;
+    display:inline;
+    text-align:center;
+    @media @small{
+        font-size:28px;
+    }
+    &:after{
+        content:'';
+        position:absolute;
+        display:block;
+        background-color:#2795AD;
+        border-radius:100px;
+        height:4px;
+        bottom:-5px;
+        width:100%;
+        box-shadow:8px 8px 4px #aefbfb;
+    }
+}
+.submit-container{
+    display:inline;
+    &:after{
+        content:'';
+        position:absolute;
+        display:block;
+        background-color:#2795AD;
+        border-radius:100px;
+        height:4px;
+        bottom:-5px;
+        width:100%;
+        box-shadow:8px 8px 4px #aefbfb;
+    }
+    &:before{
+        content:'';
+        position:absolute;
+        right:-45%;
+        height:40px;
+        width:34px;
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-size:contain;
+        top:50%;
+        transform:translateY(-50%);
+        background-image: url("data:image/svg+xml,%3Csvg width='39' height='53' viewBox='0 0 39 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_21_462)'%3E%3Cpath d='M25.6692 19.0991C26.5829 19.9127 26.5585 21.3488 25.6176 22.1309L4.15221 39.9727C2.83682 41.0661 0.844986 40.1109 0.874075 38.4007L1.49327 1.99725C1.52236 0.287042 3.54553 -0.599881 4.82297 0.537562L25.6692 19.0991Z' fill='%232795AD'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_21_462' x='0.873764' y='0.0275879' width='37.4654' height='52.4111' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='8' dy='8'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.152396 0 0 0 0 0.9625 0 0 0 0 0.9625 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_21_462'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_21_462' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+     
+    
+    }
+}
+.wpcf7-spinner{
+    display:none;
+}
+.form-container{
+    div{
+        .label-input-form{
+           width:100%;
+            @media @small{
+                width:49%;
+            }
+            span{
+                width:100%;
+                display:flex;
+                justify-content:center;
+           
+        }}
+        
+            .select-container{
+                
+                position:relative;
+                display:block;
+                width:100%;
+                @media @small{
+                    width:49%;
+                }
+         
+            select{
+               
+                border:0px;
+                font-size:18px;
+                color:#000;
+                font-weight:bold;
+                .upper;
+                option{
+                    padding:3px 5px;
+                }
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                display: block;
+                background-color: #2795AD;
+                border-radius: 100px;
+                height: 4px;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 30px;
+                width: 200px;
+                box-shadow: 8px 8px 4px #aefbfb;
+                }
+            }
+        
+        .label-textarea-form{
+            width:100%;
+            textarea{
+                height:332px;
+            }
+        }
+    }
+}
